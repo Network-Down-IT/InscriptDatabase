@@ -1,0 +1,11 @@
+# Ignore PostgreSQL data files
+/data/
+*.log
+
+# Ignore credentials
+.pgpass
+~/.pgadmin4/
+
+# Ignore temporary files
+*.tmp
+*.bak
