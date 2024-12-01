@@ -14,7 +14,7 @@ Internet access (for installing PostgreSQL and pgAdmin4).
 
 ## Quick Start
 Clone the repository to your local machine by running:
-`git clone https://github.com/Network-Down-IT/InscriptDatabase.git && cd InscriptDatabase && chmod +x setup.sh && ./setup.sh`. 
+git clone https://github.com/Network-Down-IT/InscriptDatabase.git && cd InscriptDatabase && chmod +x config/setup.sh && ./config/setup.sh
 
 After running the setup script, the following details will be displayed:
 Database Name: `inscript_db`
