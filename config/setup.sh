@@ -30,6 +30,10 @@ echo "Schemas 'core', 'content', and 'auth' created."
 
 # Install pgAdmin4
 echo "Installing pgAdmin4..."
+echo "Adding pgAdmin4 repository..."
+curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/pgadmin-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/pgadmin-archive-keyring.gpg] https://ftp.pgadmin.org/pgadmin4/apt/ubuntu $(lsb_release -cs) pgadmin4 main" | sudo tee /etc/apt/sources.list.d/pgadmin4.list
+sudo apt update
 sudo apt install -y pgadmin4
 
 # Set up pgAdmin4 user
